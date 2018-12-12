@@ -1,0 +1,17 @@
+input.search-input {
+    outline-color: transparent !important;
+}
+.basket-item-container .basket-item .meta-container-wrapper .meta-container-wrapper-inner .meta-container .item-name,
+.basket-item-container .basket-item .meta-container-wrapper .meta-container-wrapper-inner .meta-container .item-base-price,
+.basket-item-container .basket-item .meta-container-wrapper .meta-container-wrapper-inner .meta-container .item-small-prices,
+.basket-item-container .basket-item .item-additional-information-container .item-additional-information{
+    font-size: 90%;
+}
+.page-content.checkout .btn-success{
+    background-color: #729C2D;
+    border-color: #729C2D;
+}
+.page-content.checkout .btn-success:hover, .page-content.checkout .btn-success:focus, .page-content.checkout .btn-success.focus, .page-content.checkout .btn-success:active, .page-content.checkout .btn-success.active, .open>.page-content.checkout .btn-success.dropdown-toggle, .page-content.checkout .btn-success.disabled:hover, .page-content.checkout .btn-success:disabled:hover, .page-content.checkout .btn-success.disabled:focus, .page-content.checkout .btn-success:disabled:focus, .page-content.checkout .btn-success.disabled.focus, .page-content.checkout .btn-success:disabled.focus, .page-content.checkout .btn-success:active:hover, .page-content.checkout .btn-success.active:hover, .open>.page-content.checkout .btn-success.dropdown-toggle:hover, .page-content.checkout .btn-success:active:focus, .page-content.checkout .btn-success.active:focus, .open>.page-content.checkout .btn-success.dropdown-toggle:focus, .page-content.checkout .btn-success:active.focus, .page-content.checkout .btn-success.active.focus, .open>.page-content.checkout .btn-success.dropdown-toggle.focus {
+  background-color: #557422;
+  border-color: #557422;
+}
