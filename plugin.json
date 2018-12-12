@@ -1,0 +1,19 @@
+{
+    "version"           :   "2.17.0",
+    "license"           :   "AGPL-3.0",
+    "name"              :   "Silbermoos",
+    "marketplaceName"   :   {"de":"Silbermoos","en":"Silbermoos"},
+    "pluginIcon"        :   "icon_plugin_xs.png",
+    "authorIcon"        :   "icon_author_xs.png",
+    "email"             :   "info@plentylions.de",
+    "description"       :   "A Silbermoos theme for Legend.",
+    "shortDescription"  :   { "de": "Ein Silbermoos-Theme für Legend.", "en": "A Silbermoos theme for Legend." },
+    "namespace"         :   "Silbermoos",
+    "author"            :   "Plenty Lions GmbH",
+    "keywords"          :   ["plentymarkets", "plugins", "layout", "theme", "ceres"],
+    "price"             :   0,
+    "categories"        :   [3518],
+    "type"              :   "theme",
+    "require"           :   ["Legend"],
+    "serviceProvider"   :   "Silbermoos\\Providers\\SilbermoosServiceProvider"
+}
