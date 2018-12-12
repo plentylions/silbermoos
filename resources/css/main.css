@@ -1,10 +1,10 @@
 input.search-input {
     outline-color: transparent !important;
 }
-.basket-item-container .basket-item .meta-container-wrapper .meta-container-wrapper-inner .meta-container .item-name,
-.basket-item-container .basket-item .meta-container-wrapper .meta-container-wrapper-inner .meta-container .item-base-price,
-.basket-item-container .basket-item .meta-container-wrapper .meta-container-wrapper-inner .meta-container .item-small-prices,
-.basket-item-container .basket-item .item-additional-information-container .item-additional-information{
+.basket .basket-item-container .basket-item .meta-container-wrapper .meta-container-wrapper-inner .meta-container .item-name,
+.basket .basket-item-container .basket-item .meta-container-wrapper .meta-container-wrapper-inner .meta-container .item-base-price,
+.basket .basket-item-container .basket-item .meta-container-wrapper .meta-container-wrapper-inner .meta-container .item-small-prices,
+.basket .basket-item-container .basket-item .item-additional-information-container .item-additional-information{
     font-size: 90%;
 }
 .page-content.checkout .btn-success{
