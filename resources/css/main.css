@@ -15,3 +15,22 @@ input.search-input {
   background-color: #557422;
   border-color: #557422;
 }
+
+@media (max-width: 767px){
+    .prod-actions-footer-text{
+        display: none;
+    }
+    .single .qty-box .qty-btn-container{
+        width: 96px;
+    }
+    .single .qty-box .qty-btn-container .qty-btn:first-child, .single .qty-box .qty-btn-container .qty-btn:last-child{
+        width: 26px;
+    }
+    .single .qty-box .qty-input{
+        margin: 0 32px;
+    }
+    .qty-box .qty-btn-container .qty-btn .pl-material{
+        font-size: 2.5rem;
+        line-height: 35px;
+    }
+}
