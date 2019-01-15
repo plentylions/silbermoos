@@ -33,4 +33,7 @@ input.search-input {
         font-size: 2.5rem;
         line-height: 35px;
     }
+    .home .widget-image-carousel + .widget-grid-1-1-1{
+        display: none;
+    }
 }
