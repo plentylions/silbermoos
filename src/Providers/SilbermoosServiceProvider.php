@@ -8,11 +8,6 @@ use Plenty\Plugin\Events\Dispatcher;
 use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Templates\Twig;
 
-
-/**
- * Class SilbermoosServiceProvider
- * @package Silbermoos\Providers
- */
 class SilbermoosServiceProvider extends ServiceProvider
 {
     const PRIORITY = 0;
