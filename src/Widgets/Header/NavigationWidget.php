@@ -54,7 +54,7 @@ class NavigationWidget extends BaseWidget
             ->withLabel('Widget.navigationLabel')
             ->withPreviewImageUrl('/images/widgets/navigation.svg')
             ->withType(WidgetTypes::HEADER)
-            ->withCategory("legend")
+            ->withCategory(WidgetCategories::HEADER)
             ->withPosition(0)
             ->withAllowedNestingTypes(
                 [
