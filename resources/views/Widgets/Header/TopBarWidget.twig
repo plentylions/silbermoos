@@ -13,7 +13,7 @@
 {{ Twig.import("LayoutContainer", "Ceres::PageDesign.Macros.LayoutContainer") }}
 
 <div class="top-bar header-fw unfixed{% if customClass | length > 0 %} {{ customClass }}{% endif %}">
-    <div class="container-max px-0 pr-lg-3">
+    <div class="container-max">
         <div class="row mx-0 flex-row-reverse position-relative">
             {% if isPreview and not
                 hasEntries
@@ -27,6 +27,12 @@
             {% endif %}
             <div class="top-bar-items col-12 d-flex align-items-center">
                 {{ Twig.print(Twig.call("LayoutContainer.show", ["Ceres::Header.LeftSide"])) }}
+
+                {{ Twig.if("services.url.isRouteEnabled(\"wish-list\")") }}
+                    <a href="{{ Twig.print('urls.wishList') }}" rel="nofollow" class="wish-list-top d-none d-lg-block">
+                        <span class="pl-material pl-outline-favorite_border"></span>
+                    </a>
+                {{ Twig.endif() }}
 
                 {% if listEntries | length > 0 %}
                     <div class="arguments-slider-wrapper">
