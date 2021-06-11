@@ -26,7 +26,7 @@
 }
 
 .wish-list-top {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-right: 0.5rem;
 }
 
@@ -39,6 +39,7 @@
     overflow: hidden;
     height: 21px;
     text-overflow: ellipsis;
+    font-weight: 700;
 }
 
 .arguments-slider:not(.slick-slider) {
@@ -48,6 +49,15 @@
 
 #vue-app .navbar>.nv-wrap {
     padding: 0 !important;
+}
+
+.search-div {
+    position: relative;
+}
+
+.searchCol {
+    position: absolute;
+    bottom: 0;
 }
 
 #searchBox.show {

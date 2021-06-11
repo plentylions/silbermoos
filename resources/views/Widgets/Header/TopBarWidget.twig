@@ -30,7 +30,7 @@
 
                 {{ Twig.if("services.url.isRouteEnabled(\"wish-list\")") }}
                     <a href="{{ Twig.print('urls.wishList') }}" rel="nofollow" class="wish-list-top d-lg-none">
-                        <span class="pl-material pl-outline-favorite_border"></span>
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
                     </a>
                 {{ Twig.endif() }}
 
