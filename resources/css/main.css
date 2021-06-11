@@ -47,8 +47,17 @@
     justify-content: space-between;
 }
 
+.arguments-slider:not(.slick-slider) .argument-item {
+    flex: 1;
+}
+
 #vue-app .navbar>.nv-wrap {
     padding: 0 !important;
+}
+
+.trusted-link img {
+    width: 50px;
+    margin-right: 10px;
 }
 
 .search-div {
@@ -70,8 +79,8 @@ input.search-input {
 
 .navbar-brand {
     text-align: center;
-    padding: 0;
     margin: 0;
+    padding: 28px 0 0.5rem 0;
 }
 
 .navbar-brand .logo-sub-title {
