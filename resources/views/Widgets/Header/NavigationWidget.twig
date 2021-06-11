@@ -97,8 +97,10 @@
                             <lazy-hydrate when-idle>
                                 <wish-list-count>
                                     <a class="nav-link" aria-label="{{ Twig.print('trans("Ceres::Template.wishList")') }}">
-                                        <span class="pl-material pl-outline-favorite_border"></span>
-                                        <span class="d-none d-md-inline">{{ Twig.print('trans("Ceres::Template.wishList")') }}</span>
+                                        <div class="header-icon-item">
+                                            <span class="hii-icon pl-material pl-outline-favorite_border"></span>
+                                            <span class="hii-text">{{ Twig.print('trans("Ceres::Template.wishList")') }}</span>
+                                        </div>
                                     </a>
                                 </wish-list-count>
                             </lazy-hydrate>
