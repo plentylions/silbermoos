@@ -8,6 +8,8 @@ input.search-input {
 
 .navbar-brand {
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar-brand .logo-sub-title {
@@ -32,6 +34,14 @@ input.search-input {
 }
 
 @media (max-width: 991.98px) {
+    .navbar-brand {
+        padding: 0.5rem 0;
+    }
+
+    .navbar-brand img {
+        max-height: 40px;
+    }
+
     .wish-list-div {
         display: none;
     }
