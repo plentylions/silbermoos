@@ -1,6 +1,8 @@
 {% import "Ceres::Widgets.Helper.TwigBuilder" as Twig %}
 
 {% set customClass = widget.settings.customClass.mobile %}
+{% set phone = widget.settings.phone.mobile %}
+{% set whatsappText = widget.settings.whatsappText.mobile %}
 {% set listEntries = widget.settings.entries.mobile %}
 
 {% set hasEntries    = false %}
@@ -37,6 +39,24 @@
                         {% endfor %}
                     </ul>
                 {% endif %}
+
+                <ul class="contact-info list-unstyled">
+                    {% if phone | length > 0 %}
+                        <li>
+                            <a href="tel:{{ phone }}">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <span class="text">{{ phone }}</span>
+                            </a>
+                        </li>
+                    {% endif %}
+
+                    {% if whatsappText | length > 0 %}
+                        <li>
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            <span class="text">{{ whatsappText }}</span>
+                        </li>
+                    {% endif %}
+                </ul>
             </div>
         </div>
     </div>

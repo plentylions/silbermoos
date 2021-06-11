@@ -48,6 +48,16 @@ class TopBarWidget extends BaseWidget
             ->withName('Widget.topBarEntryTextLabel')
             ->withTooltip('Widget.topBarEntryTextLabel');
 
+        $settingsFactory->createText('phone')
+            ->withDefaultValue("+49 6136 4659377")
+            ->withName('Widget.topBarPhoneLabel')
+            ->withTooltip('Widget.topBarPhoneLabel');
+
+        $settingsFactory->createText('whatsappText')
+            ->withDefaultValue("Fragen Sie uns!")
+            ->withName('Widget.topBarWhatsappTextLabel')
+            ->withTooltip('Widget.topBarWhatsappTextLabel');
+
         return $settingsFactory->toArray();
     }
 }
