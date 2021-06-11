@@ -1,3 +1,27 @@
+.top-bar,
+.top-bar a:not(.btn) {
+    color: #000;
+}
+
+.top-bar .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 auto;
+}
+
+.top-bar .contact-info>li {
+    margin: 0 0.5rem;
+}
+
+.top-bar .contact-info .fa {
+    font-size: 1.2rem;
+    margin: 0 0.25rem 0 0.5rem;
+}
+
+.top-bar .contact-info .fa-whatsapp {
+    color: #009e0f;
+}
+
 #searchBox.show {
     display: block;
 }
@@ -30,6 +54,10 @@ input.search-input {
 
 .header-icon-item .hii-text {
     display: block;
+}
+
+.toggle-basket-preview {
+    color: inherit !important;
 }
 
 @media (max-width: 991.98px) {
