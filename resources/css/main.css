@@ -22,6 +22,12 @@
     color: #009e0f;
 }
 
+.arguments-slider:not(.slick-slider) {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
 #searchBox.show {
     display: block;
 }

@@ -4,7 +4,9 @@ $(function () {
             vertical: true,
             autoplay: true,
             autoplaySpeed: 5000,
-            speed: 300
+            speed: 300,
+            dots: false,
+            arrows: false
         });
     }
 });

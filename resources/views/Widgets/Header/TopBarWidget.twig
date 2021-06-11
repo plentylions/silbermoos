@@ -29,14 +29,16 @@
                 {{ Twig.print(Twig.call("LayoutContainer.show", ["Ceres::Header.LeftSide"])) }}
 
                 {% if listEntries | length > 0 %}
-                    <div class="arguments-slider">
-                        {% for entry in listEntries %}
-                            <div class="argument-item">
-                                {% if entry.text is not empty %}
-                                    <span>{{ entry.text }}</span>
-                                {% endif %}
-                            </div>
-                        {% endfor %}
+                    <div class="arguments-slider-wrapper">
+                        <div class="arguments-slider">
+                            {% for entry in listEntries %}
+                                <div class="argument-item">
+                                    {% if entry.text is not empty %}
+                                        <span>{{ entry.text }}</span>
+                                    {% endif %}
+                                </div>
+                            {% endfor %}
+                        </div>
                     </div>
                 {% endif %}
 
