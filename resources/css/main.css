@@ -33,6 +33,14 @@ input.search-input {
 }
 
 @media (max-width: 991.98px) {
+    .toggle-basket-preview {
+        padding-right: 0 !important;
+    }
+
+    .navbar .nav-link {
+        padding: 1rem 0.8rem;
+    }
+
     .navbar-brand {
         padding: 0.5rem 0;
     }
