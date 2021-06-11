@@ -66,7 +66,36 @@
 
 .searchCol {
     position: absolute;
-    bottom: 0;
+    bottom: -84px;
+    width: 250px;
+    right: 0;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #d0d0d0;
+}
+
+.searchCol>div:before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #d0d0d0;
+}
+
+.searchCol>div:after {
+    content: "";
+    position: absolute;
+    top: -17px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
 }
 
 #searchBox.show {
