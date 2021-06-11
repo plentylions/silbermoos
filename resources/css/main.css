@@ -6,10 +6,16 @@ input.search-input {
     outline-color: transparent !important;
 }
 
+.navbar-brand {
+    text-align: center;
+}
+
 .navbar-brand .logo-sub-title {
     display: block;
     font-size: 1.2rem;
+    font-weight: 500;
     color: #b45f06;
+    margin-top: 0.25rem;
 }
 
 .header-icon-item {
@@ -22,7 +28,7 @@ input.search-input {
 
 .header-icon-item .hii-text {
     display: block;
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
 }
 
 @media (max-width: 991.98px) {
@@ -30,6 +36,7 @@ input.search-input {
         display: none;
     }
 
+    .navbar-brand .logo-sub-title,
     .header-icon-item .hii-text {
         display: none;
     }
