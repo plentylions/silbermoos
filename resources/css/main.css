@@ -12,6 +12,29 @@ input.search-input {
     color: #b45f06;
 }
 
+.header-icon-item {
+    text-align: center;
+}
+
+.header-icon-item .hii-icon {
+    font-size: 20px;
+}
+
+.header-icon-item .hii-text {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 991.98px) {
+    .wish-list-div {
+        display: none;
+    }
+
+    .header-icon-item .hii-text {
+        display: none;
+    }
+}
+
 .basket .basket-item-container .basket-item .meta-container-wrapper .meta-container-wrapper-inner .meta-container .item-name,
 .basket .basket-item-container .basket-item .meta-container-wrapper .meta-container-wrapper-inner .meta-container .item-base-price,
 .basket .basket-item-container .basket-item .meta-container-wrapper .meta-container-wrapper-inner .meta-container .item-small-prices,
