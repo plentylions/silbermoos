@@ -25,12 +25,11 @@ input.search-input {
 }
 
 .header-icon-item .hii-icon {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .header-icon-item .hii-text {
     display: block;
-    margin-top: 0.25rem;
 }
 
 @media (max-width: 991.98px) {
