@@ -38,6 +38,7 @@ class SilbermoosServiceProvider extends ServiceProvider
 
         $dispatcher->listen('IO.Resources.Import', function (ResourceContainer $container) {
             $container->addStyleTemplate('Silbermoos::Stylesheet');
+            $container->addScriptTemplate('Silbermoos::Script');
         }, self::PRIORITY);
     }
 }
