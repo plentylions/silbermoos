@@ -19,6 +19,7 @@
 {% set megaMenuMaxItems3    = widget.settings.megaMenuMaxItems.stage3.mobile | default(2) %}
 {% set megaMenuMaxItems     = { "1": megaMenuMaxItems1, "2": megaMenuMaxItems2, "3": megaMenuMaxItems3 } %}
 {% set maxRootItems         = widget.settings.maxRootItems.mobile %}
+{% set logoSubTitle         = widget.settings.logoSubTitle.mobile %}
 
 {% set realMaxRootItems = 100 %}
 {% if limitRootItems %}
@@ -46,6 +47,14 @@
     <div class="nv-wrap">
         <div class="container-max px-0">
             <div class="row w-100 mx-0 flex-row flex-wrap align-items-center">
+                <div class="col-2 col-sm-1 nopad-mobile d-lg-none">
+                    <button v-open-mobile-navigation class="navbar-toggler" type="button">
+                        <span class="pl-material pl-outline-dehaze"></span>
+                    </button>
+                </div>
+                <div class="col-12 col-sm-6 col-md-7 col-lg-4 nopad-mobile">
+
+                </div>
                 <div class="col-10 col-sm-5 col-md-4 col-lg-4 site-logo">
                     {% if companyLogoUrl | trim | length > 0 %}
                         <a class="navbar-brand" href="{{ Twig.print('urls.home') }}">
@@ -57,50 +66,17 @@
                                     alt="{{ Twig.print('trans("Ceres::Template.headerCompanyName")') }}"
                                 />
                             </picture>
+                            {% if logoSubTitle | length > 0 %}
+                                <span class="logo-sub-title">
+                                    {{ logoSubTitle }}
+                                </span>
+                            {% endif %}
                         </a>
                     {% endif %}
                 </div>
-                <div class="col-2 col-sm-1 order-sm-5 order-0 text-right nopad-mobile d-lg-none">
-                    <button v-open-mobile-navigation class="navbar-toggler" type="button">
-                        <span class="pl-material pl-outline-dehaze"></span>
-                    </button>
-                </div>
-                <div class="col-12 col-sm-6 col-md-7 col-lg-4 searchCol nopad-mobile">
-                    {{ Twig.if("overrideSearchBar | trim is empty") }}
-                        {% if not isPreview %}<lazy-hydrate when-idle>{% endif %}
-                            <item-search>
-                                <div class="w-100 position-relative d-flex flex-grow-1">
-                                    <input type="search" class="search-input px-3 py-2 flex-grow-1" placeholder="{{ Twig.print('trans("Legend::Template.headerSearchPlaceholder")') }}" aria-label="{{ Twig.print('trans("Ceres::Template.headerSearchTerm")') }}">
-                                    <button class="search-submit" type="submit" aria-label="{{ Twig.print('trans("Ceres::Template.headerSearch")') }}">
-                                        <span class="pl-material pl-baseline-search"></span>
-                                    </button>
-                                </div>
-
-                                {% if isPreview %}
-                                    <template #search-button>
-                                        <button class="search-submit" type="submit" {{ WidgetHelper.makeClickable(isPreview) }} data-toggle="collapse" href="#search-suggestions_{{ uid }}" role="button">
-                                            <span class="pl-material pl-baseline-search"></span>
-                                        </button>
-                                    </template>
-                                {% endif %}
-
-                                {% if isPreview or children is defined and children.suggestions | trim is not empty %}
-                                    <template #autocomplete-suggestions>
-                                        <div class="autocomplete-suggestions shadow bg-white w-100{% if isPreview %} collapse position-relative mh-100{% endif %}"
-                                            {% if isPreview %} data-builder-child-container="suggestions" id="search-suggestions_{{ uid }}"{% endif %}>
-                                            {{ children.suggestions | raw }}
-                                        </div>
-                                    </template>
-                                {% endif %}
-                            </item-search>
-                        {% if not isPreview %}</lazy-hydrate>{% endif %}
-                    {{ Twig.else() }}
-                        {{ Twig.print("overrideSearchBar | raw") }}
-                    {{ Twig.endif() }}
-                </div>
                 <div class="col-md-4 col-lg-4 d-none d-lg-block">
                     <div class="search-div">
-                        <a class="anicon anicon-search-xcross nav-link"
+                        <a class="nav-link"
                             {{ WidgetHelper.makeClickable(isPreview) }}
                             data-toggle="collapse"
                             href="#searchBox"
@@ -110,7 +86,10 @@
                             data-parent="#controlsList"
                             aria-label="{{ Twig.print('trans("Ceres::Template.headerSearch")') }}"
                             @mouseover.once="$store.dispatch('loadComponent', 'item-search')">
-                            <span class="anicon-search-item" aria-hidden="true"></span>
+                            <div class="header-icon-item">
+                                <span class="hii-icon pl-material pl-outline-shopping_cart"></span>
+                                <span class="hii-text">{{ Twig.print('trans("Ceres::Template.headerSearch")') }}</span>
+                            </div>
                         </a>
                     </div>
                     {{ Twig.if("services.url.isRouteEnabled(\"wish-list\")") }}
@@ -127,10 +106,10 @@
                     {{ Twig.endif() }}
                     <div class="basket-div" @mouseover.once="$store.dispatch('loadComponent', 'basket-preview')">
                         <a v-toggle-basket-preview href="#" class="toggle-basket-preview nav-link text-right">
-                            <span class="pl-material pl-outline-shopping_cart"></span>
-                            {{ Twig.print('trans("Legend::Template.headerCart1")') }} <span class="qty" v-basket-item-quantity="$store.state.basket.data.itemQuantity">0</span> {{ Twig.print('trans("Legend::Template.headerCart2")') }}
-                            <span class="sum" v-if="!$store.state.basket.showNetPrices" v-basket-item-sum="$store.state.basket.data.itemSum">0,00 {{ Twig.print("currencyData") }}</span>
-                            <span class="sum" v-else v-cloak v-basket-item-sum="$store.state.basket.data.itemSumNet">0,00 {{ Twig.print("currencyData") }}</span>
+                            <div class="header-icon-item">
+                                <span class="hii-icon pl-material pl-outline-shopping_cart"></span>
+                                <span class="hii-text">{{ Twig.print('trans("Legend::Template.headerCart1")') }}</span>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -139,7 +118,7 @@
     </div>
 
     <div class="container-max px-0 px-lg-3">
-        <div class="position-relative">
+        <div class="searchCol position-relative w-100">
             <div id="searchBox" class="cmp cmp-search-box collapse{% if isPreview %} position-relative{% endif %}">
                 {{ Twig.if("overrideSearchBar | trim is empty") }}
                     {% if not isPreview %}<lazy-load component="item-search">{% endif %}

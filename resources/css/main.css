@@ -1,39 +1,78 @@
+#searchBox.show {
+    display: block;
+}
+
 input.search-input {
     outline-color: transparent !important;
 }
+
+.navbar-brand .logo-sub-title {
+    display: block;
+    font-size: 1.2rem;
+    color: #b45f06;
+}
+
 .basket .basket-item-container .basket-item .meta-container-wrapper .meta-container-wrapper-inner .meta-container .item-name,
 .basket .basket-item-container .basket-item .meta-container-wrapper .meta-container-wrapper-inner .meta-container .item-base-price,
 .basket .basket-item-container .basket-item .meta-container-wrapper .meta-container-wrapper-inner .meta-container .item-small-prices,
-.basket .basket-item-container .basket-item .item-additional-information-container .item-additional-information{
+.basket .basket-item-container .basket-item .item-additional-information-container .item-additional-information {
     font-size: 90%;
 }
-.page-content.checkout .btn-success{
+
+.page-content.checkout .btn-success {
     background-color: #729C2D;
     border-color: #729C2D;
 }
-.page-content.checkout .btn-success:hover, .page-content.checkout .btn-success:focus, .page-content.checkout .btn-success.focus, .page-content.checkout .btn-success:active, .page-content.checkout .btn-success.active, .open>.page-content.checkout .btn-success.dropdown-toggle, .page-content.checkout .btn-success.disabled:hover, .page-content.checkout .btn-success:disabled:hover, .page-content.checkout .btn-success.disabled:focus, .page-content.checkout .btn-success:disabled:focus, .page-content.checkout .btn-success.disabled.focus, .page-content.checkout .btn-success:disabled.focus, .page-content.checkout .btn-success:active:hover, .page-content.checkout .btn-success.active:hover, .open>.page-content.checkout .btn-success.dropdown-toggle:hover, .page-content.checkout .btn-success:active:focus, .page-content.checkout .btn-success.active:focus, .open>.page-content.checkout .btn-success.dropdown-toggle:focus, .page-content.checkout .btn-success:active.focus, .page-content.checkout .btn-success.active.focus, .open>.page-content.checkout .btn-success.dropdown-toggle.focus {
-  background-color: #557422;
-  border-color: #557422;
+
+.page-content.checkout .btn-success:hover,
+.page-content.checkout .btn-success:focus,
+.page-content.checkout .btn-success.focus,
+.page-content.checkout .btn-success:active,
+.page-content.checkout .btn-success.active,
+.open>.page-content.checkout .btn-success.dropdown-toggle,
+.page-content.checkout .btn-success.disabled:hover,
+.page-content.checkout .btn-success:disabled:hover,
+.page-content.checkout .btn-success.disabled:focus,
+.page-content.checkout .btn-success:disabled:focus,
+.page-content.checkout .btn-success.disabled.focus,
+.page-content.checkout .btn-success:disabled.focus,
+.page-content.checkout .btn-success:active:hover,
+.page-content.checkout .btn-success.active:hover,
+.open>.page-content.checkout .btn-success.dropdown-toggle:hover,
+.page-content.checkout .btn-success:active:focus,
+.page-content.checkout .btn-success.active:focus,
+.open>.page-content.checkout .btn-success.dropdown-toggle:focus,
+.page-content.checkout .btn-success:active.focus,
+.page-content.checkout .btn-success.active.focus,
+.open>.page-content.checkout .btn-success.dropdown-toggle.focus {
+    background-color: #557422;
+    border-color: #557422;
 }
 
-@media (max-width: 767px){
-    .prod-actions-footer-text{
+@media (max-width: 767px) {
+    .prod-actions-footer-text {
         display: none;
     }
-    .single .qty-box .qty-btn-container{
+
+    .single .qty-box .qty-btn-container {
         width: 96px;
     }
-    .single .qty-box .qty-btn-container .qty-btn:first-child, .single .qty-box .qty-btn-container .qty-btn:last-child{
+
+    .single .qty-box .qty-btn-container .qty-btn:first-child,
+    .single .qty-box .qty-btn-container .qty-btn:last-child {
         width: 26px;
     }
-    .single .qty-box .qty-input{
+
+    .single .qty-box .qty-input {
         margin: 0 32px;
     }
-    .qty-box .qty-btn-container .qty-btn .pl-material{
+
+    .qty-box .qty-btn-container .qty-btn .pl-material {
         font-size: 2.5rem;
         line-height: 35px;
     }
-    .home .widget-image-carousel + .widget-grid-1-1-1{
+
+    .home .widget-image-carousel+.widget-grid-1-1-1 {
         display: none;
     }
 }
