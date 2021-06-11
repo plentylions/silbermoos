@@ -32,6 +32,13 @@
 
 .arguments-slider-wrapper {
     flex: 1;
+    overflow: hidden;
+}
+
+.argument-item {
+    overflow: hidden;
+    height: 21px;
+    text-overflow: ellipsis;
 }
 
 .arguments-slider:not(.slick-slider) {
