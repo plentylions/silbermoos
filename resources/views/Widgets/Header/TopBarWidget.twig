@@ -29,7 +29,7 @@
                 {{ Twig.print(Twig.call("LayoutContainer.show", ["Ceres::Header.LeftSide"])) }}
 
                 {{ Twig.if("services.url.isRouteEnabled(\"wish-list\")") }}
-                    <a href="{{ Twig.print('urls.wishList') }}" rel="nofollow" class="wish-list-top d-none d-lg-block">
+                    <a href="{{ Twig.print('urls.wishList') }}" rel="nofollow" class="wish-list-top d-lg-none">
                         <span class="pl-material pl-outline-favorite_border"></span>
                     </a>
                 {{ Twig.endif() }}

@@ -25,6 +25,11 @@
     color: #009e0f;
 }
 
+.wish-list-top {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
 .arguments-slider-wrapper {
     flex: 1;
 }
