@@ -147,7 +147,7 @@ class NavigationWidget extends BaseWidget
             ->withDefaultValue('')
             ->withAllowedExtensions(ImageBoxWidget::IMAGE_EXTENSIONS);
 
-        $settings->createText("logoSubTitle")
+        $settingsFactory->createText("logoSubTitle")
             ->withDefaultValue("LOGO CLAIM PLATZHALTER")
             ->withName("Widget.navigationLogoSubTitleLabel");
 
