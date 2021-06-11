@@ -66,12 +66,17 @@
 
 .searchCol {
     position: absolute;
-    bottom: -84px;
-    width: 250px;
+    bottom: 0;
+    width: 280px;
     right: 0;
     padding: 10px;
     background: #fff;
     border: 1px solid #d0d0d0;
+    transform: translate(0, 100%);
+}
+
+.searchCol>div {
+    position: relative;
 }
 
 .searchCol>div:before {
@@ -98,8 +103,12 @@
     border-bottom: 8px solid #fff;
 }
 
-#searchBox.show {
+#searchBox {
     display: block;
+}
+
+#searchBox.collapse:not(.show) {
+    display: none;
 }
 
 input.search-input {
