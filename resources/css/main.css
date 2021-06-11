@@ -3,9 +3,12 @@
     color: #000;
 }
 
+.top-bar-items {
+    padding: 0.25rem 0;
+}
+
 .top-bar .contact-info {
     display: flex;
-    flex-wrap: wrap;
     margin: 0 0 0 auto;
 }
 
@@ -22,10 +25,13 @@
     color: #009e0f;
 }
 
+.arguments-slider-wrapper {
+    flex: 1;
+}
+
 .arguments-slider:not(.slick-slider) {
     display: flex;
     justify-content: space-between;
-    flex: 1;
 }
 
 #searchBox.show {
@@ -67,6 +73,14 @@ input.search-input {
 }
 
 @media (max-width: 991.98px) {
+    .top-bar .contact-info .text {
+        display: none;
+    }
+
+    .arguments-slider-wrapper {
+        text-align: center;
+    }
+
     .toggle-basket-preview {
         padding-right: 0 !important;
     }
