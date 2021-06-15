@@ -1,3 +1,7 @@
+.top-bar {
+    background-color: #fff;
+}
+
 .top-bar,
 .top-bar a:not(.btn) {
     color: #000;
@@ -158,6 +162,10 @@ input.search-input {
         text-align: center;
     }
 
+    .arguments-slider:not(.slick-initialized) {
+        display: none;
+    }
+
     .toggle-basket-preview {
         padding-right: 0 !important;
     }
@@ -181,6 +189,13 @@ input.search-input {
     .navbar-brand .logo-sub-title,
     .header-icon-item .hii-text {
         display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .main-navbar-collapsable ul.mainmenu>li>a {
+        font-weight: 700;
+        text-transform: none;
     }
 }
 
