@@ -58,6 +58,11 @@ class TopBarWidget extends BaseWidget
             ->withName('Widget.topBarWhatsappTextLabel')
             ->withTooltip('Widget.topBarWhatsappTextLabel');
 
+        $settingsFactory->createText('whatsappPhone')
+            ->withDefaultValue("4961364659377")
+            ->withName('Widget.topBarWhatsappPhoneLabel')
+            ->withTooltip('Widget.topBarWhatsappPhoneLabel');
+
         return $settingsFactory->toArray();
     }
 }

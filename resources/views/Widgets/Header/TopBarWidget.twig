@@ -3,6 +3,7 @@
 {% set customClass = widget.settings.customClass.mobile %}
 {% set phone = widget.settings.phone.mobile %}
 {% set whatsappText = widget.settings.whatsappText.mobile %}
+{% set whatsappPhone = widget.settings.whatsappPhone.mobile %}
 {% set listEntries = widget.settings.entries.mobile %}
 
 {% set hasEntries    = false %}
@@ -60,8 +61,10 @@
 
                     {% if whatsappText | length > 0 %}
                         <li>
-                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                            <span class="text">{{ whatsappText }}</span>
+                            <a href="https://wa.me/{{ whatsappPhone }}">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                <span class="text">{{ whatsappText }}</span>
+                            </a>
                         </li>
                     {% endif %}
                 </ul>
