@@ -11,10 +11,12 @@ $(function () {
     }
 
     $('#notificationbar #close-nb').click(function () {
-        setTimeout(function(){
-            $('#vue-app').css('margin-top',0);
-            window.dispatchEvent(new Event('resize'));
-            window.dispatchEvent(new Event('scroll'));
+        setTimeout(function () {
+            $('#vue-app').css('margin-top', 0);
+            setTimeout(function () {
+                window.dispatchEvent(new Event('resize'));
+                window.dispatchEvent(new Event('scroll'));
+            }, 100);
         }, 200);
     });
 });
