@@ -17,6 +17,14 @@ $(function () {
                 window.dispatchEvent(new Event('resize'));
                 window.dispatchEvent(new Event('scroll'));
             }, 100);
+            setTimeout(function () {
+                window.dispatchEvent(new Event('resize'));
+                window.dispatchEvent(new Event('scroll'));
+            }, 400);
+            setTimeout(function () {
+                window.dispatchEvent(new Event('resize'));
+                window.dispatchEvent(new Event('scroll'));
+            }, 700);
         }, 200);
     });
 });
