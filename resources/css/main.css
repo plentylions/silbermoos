@@ -13,6 +13,10 @@
     color: #729C2D !important;
 }
 
+.navbar .nv-wrap a.nav-link {
+    padding: 1.3rem 1.6rem;
+}
+
 .toggle-basket-preview {
     padding-right: 0 !important;
 }
@@ -53,7 +57,6 @@
     overflow: hidden;
     height: 21px;
     text-overflow: ellipsis;
-    font-weight: 700;
 }
 
 .arguments-slider:not(.slick-slider) {
