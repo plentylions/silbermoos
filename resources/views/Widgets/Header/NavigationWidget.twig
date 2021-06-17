@@ -19,7 +19,6 @@
 {% set megaMenuMaxItems3    = widget.settings.megaMenuMaxItems.stage3.mobile | default(2) %}
 {% set megaMenuMaxItems     = { "1": megaMenuMaxItems1, "2": megaMenuMaxItems2, "3": megaMenuMaxItems3 } %}
 {% set maxRootItems         = widget.settings.maxRootItems.mobile %}
-{% set logoSubTitle         = widget.settings.logoSubTitle.mobile %}
 
 {% set realMaxRootItems = 100 %}
 {% if limitRootItems %}
@@ -57,7 +56,7 @@
                         <img class="img-fluid" src="{{ plugin_path('Silbermoos') }}/images/icon-trustmark.svg" />
                     </a>
                     <a class="trusted-link" href="https://www.trustami.com/erfahrung/silbermoos-de-bewertung" target="_blank">
-                        <img class="img-fluid" src="https://cdn.trustami.com/userimages/68773/hdSeals/573d977acc96c5c6378b4581.png" />
+                        <img class="img-fluid trustami-img" src="https://cdn.trustami.com/userimages/68773/hdSeals/573d977acc96c5c6378b4581.png" />
                     </a>
                 </div>
                 <div class="col-6 col-md-6 col-lg-4 site-logo text-center">
@@ -71,11 +70,6 @@
                                     alt="{{ Twig.print('trans("Ceres::Template.headerCompanyName")') }}"
                                 />
                             </picture>
-                            {% if logoSubTitle | length > 0 %}
-                                <span class="logo-sub-title">
-                                    {{ logoSubTitle }}
-                                </span>
-                            {% endif %}
                         </a>
                     {% endif %}
                 </div>
@@ -91,7 +85,7 @@
                             aria-label="{{ Twig.print('trans("Ceres::Template.headerSearch")') }}"
                             @mouseover.once="$store.dispatch('loadComponent', 'item-search')">
                             <div class="header-icon-item">
-                                <i class="hii-icon fa fa-search" aria-hidden="true"></i>
+                                <span class="hii-icon pl-material pl-baseline-search"></span>
                                 <span class="hii-text">{{ Twig.print('trans("Ceres::Template.headerSearch")') }}</span>
                             </div>
                         </a>
@@ -131,7 +125,7 @@
                     <div class="basket-div" @mouseover.once="$store.dispatch('loadComponent', 'basket-preview')">
                         <a v-toggle-basket-preview href="#" class="toggle-basket-preview nav-link text-right">
                             <div class="header-icon-item">
-                                <i class="hii-icon fa fa-shopping-cart" aria-hidden="true"></i>
+                                <span class="hii-icon pl-material pl-outline-shopping_cart"></span>
                                 <span class="hii-text">{{ Twig.print('trans("Legend::Template.headerCart1")') }}</span>
                             </div>
                         </a>

@@ -147,10 +147,6 @@ class NavigationWidget extends BaseWidget
             ->withDefaultValue('')
             ->withAllowedExtensions(ImageBoxWidget::IMAGE_EXTENSIONS);
 
-        $settingsFactory->createText("logoSubTitle")
-            ->withDefaultValue("LOGO CLAIM PLATZHALTER")
-            ->withName("Widget.navigationLogoSubTitleLabel");
-
         $settingsFactory->createSpacing();
 
         return $settingsFactory->toArray();

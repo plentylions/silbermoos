@@ -2,7 +2,7 @@
 <script type="x/template" data-component="wish-list-count">
     <a :href="urlWishList" rel="nofollow" class="nav-link" :aria-label="$translate('Ceres::Template.wishList')">
         <div class="header-icon-item">
-            <i class="hii-icon fa" :class="{'fa-heart-o': !wishListCount, 'fa-heart': wishListCount}" aria-hidden="true"></i>
+            <span class="hii-icon pl-material" :class="{'pl-outline-favorite_border': !wishListCount, 'pl-outline-favorite': wishListCount}" ></span>
             <span class="hii-text">{{ trans("Ceres::Template.wishList") }}</span>
         </div>
     </a>

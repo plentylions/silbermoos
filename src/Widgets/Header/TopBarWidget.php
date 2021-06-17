@@ -48,6 +48,11 @@ class TopBarWidget extends BaseWidget
             ->withName('Widget.topBarEntryTextLabel')
             ->withTooltip('Widget.topBarEntryTextLabel');
 
+        $settingsFactory->createText('phoneText')
+            ->withDefaultValue("Für Sie erreichbar")
+            ->withName('Widget.topBarPhoneTextLabel')
+            ->withTooltip('Widget.topBarPhoneTextLabel');
+
         $settingsFactory->createText('phone')
             ->withDefaultValue("+49 6136 4659377")
             ->withName('Widget.topBarPhoneLabel')
