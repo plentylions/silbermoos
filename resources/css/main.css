@@ -14,7 +14,7 @@
 }
 
 .navbar .nv-wrap a.nav-link {
-    padding: 1.3rem 1.6rem;
+    padding: 1.3rem 1.55rem;
 }
 
 .toggle-basket-preview {
@@ -78,7 +78,7 @@
 }
 
 .trustami-img {
-    width: 58px;
+    width: 58px !important;
 }
 
 .search-div {
