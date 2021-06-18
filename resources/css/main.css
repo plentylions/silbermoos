@@ -60,7 +60,7 @@
 
 .wish-list-top {
     font-size: 1.2rem;
-    margin-right: 40px;
+    margin-right: 35px;
 }
 
 .arguments-slider-wrapper {
@@ -190,8 +190,12 @@ input.search-input {
         display: none;
     }
 
+    .top-bar .contact-info .fa {
+        margin: 0;
+    }
+
     .top-bar .contact-info li:first-child {
-        margin-right: 1rem;
+        margin-right: 2rem;
         margin-left: 0;
     }
 
