@@ -13,13 +13,18 @@
     text-transform: uppercase;
 }
 
+.top-bar,
+.top-bar a:not(.btn) {
+    font-size: 0.93rem;
+}
+
 .navbar .nv-wrap a:focus,
 .navbar .nv-wrap a:hover {
     color: #729C2D !important;
 }
 
 .navbar .nv-wrap a.nav-link {
-    padding: 1.3rem 1.55rem;
+    padding: 1.3rem 1.15rem;
 }
 
 .toggle-basket-preview {
@@ -33,6 +38,11 @@
 .top-bar .contact-info {
     display: flex;
     margin: 0 0 0 auto;
+    align-items: center;
+}
+
+.top-bar .contact-info>li {
+    line-height: 1;
 }
 
 .top-bar .contact-info>li:not(:last-of-type) {
@@ -40,7 +50,7 @@
 }
 
 .top-bar .contact-info .fa {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 0 0.25rem 0 0.5rem;
 }
 
@@ -60,7 +70,6 @@
 
 .argument-item {
     overflow: hidden;
-    height: 21px;
     text-overflow: ellipsis;
     text-transform: uppercase;
 }
@@ -179,6 +188,14 @@ input.search-input {
 
     .arguments-slider:not(.slick-initialized) {
         display: none;
+    }
+
+    .top-bar a:not(.btn) {
+        margin-left: 0.5rem;
+    }
+
+    .navbar .nv-wrap a.nav-link {
+        padding: 1.3rem 0.5rem;
     }
 
     .toggle-basket-preview {
